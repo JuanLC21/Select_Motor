@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Motor</title>
+    <link rel="stylesheet" type="text/css" href="./src/style.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
+    <script defer type="module" src="./src/script.js"></script>
+</head>
+<body>
+    <div class="content">
+        <header class="header">
+            <div class="header__title">
+                <h1 class="header__h1" data-section="header" data-value="main-title">Selección De Motor</h1>
+                <div class="header__menu">
+                    <div class="header__menu-title">
+                        <h3 data-section="system" data-value="title-sys">Sistemas</h3>
+                    </div>
+                    <button class="header__button-system" data-section="system" data-value="button-0"  name="conveyor">Banda</button>
+                    <button class="header__button-system" data-section="system" data-value="button-1"  name="inclined">Banda inclinada</button>
+                    <button class="header__button-system" data-section="system" data-value="button-2"  name="winch">Malacate</button>
+                    <!-- <button class="header__button-system" data-section="system" data-value="button-3"  name="pump">Bomba</button> -->
+                </div>  
+            </div>
+            <div class="header__switch" id="switch">
+                <button class="header__button" id="header__button">
+                    <span class="header__btn"></span>
+                    <i class="far fa-sun change_light"></i>
+                    <i class="far fa-moon"></i>  
+                </button>
+                <button class="header__language" id="language">
+                    <span class="header__es header__lang change_light" data-lang="ES">ES</span>
+                    <span class="header__en header__lang" data-lang="EN">EN</span>
+                </button>
+                <button class="header__menu-button">
+                    <i class='bx bx-menu'></i>
+                    <i class='bx bx-x change_icon'></i>
+                </button>
+            </div>
+        </header>
+        <main class="main">
+            <section class="conversor">
+                <button class="conversor__title">
+                    <h3 data-section="conversor" data-value="title-conv">Conversor Unidades</h3>
+                    <div class="conversor__arrow">
+                        <i class='bx bxs-down-arrow'></i>
+                    </div>
+                </button>
+                <div class="conversor__content" lang="ES" id="conversor__content">
+                    <div class="conversor__unit">
+                        <h3 data-section="conversor" data-value="mass" class="conversor__h3">Masa</h3>
+                        <input class="conversor__row-a conversor__input" type="number" id="lb">
+                        <p class="conversor__row-a conversor__paragraph">lb</p>
+                        <input class="conversor__row-b conversor__input" type="number" id="kg">
+                        <p class="conversor__row-b conversor__paragraph">kg</p>
+                    </div>
+                    <div class="conversor__unit">
+                        <h3 data-section="conversor" data-value="distance" class="conversor__h3">Distancia</h3>
+                        <input class="conversor__row-a conversor__input" type="number" id="ft">
+                        <p class="conversor__row-a conversor__paragraph">ft</p>
+                        <input class="conversor__row-b conversor__input" type="number" id="m">
+                        <p class="conversor__row-b conversor__paragraph">m</p>
+                    </div>
+                    <div class="conversor__unit">
+                        <h3 data-section="conversor" data-value="speed" class="conversor__h3">Velocidad</h3>
+                        <input class="conversor__row-a conversor__input" type="number" id="ft/s">
+                        <p class="conversor__row-a conversor__paragraph">ft/s</p>
+                        <input class="conversor__row-b conversor__input" type="number" id="m/s">
+                        <p class="conversor__row-b conversor__paragraph">m/s</p>
+                    </div>
+                </div>
+            </section>
+            <section class="system">
+                <div class="system__images">
+                    <img src="images/inclined_conveyor.jpg" id= 1 alt="inclined">
+                    <img src="images/winch.png" id= 2 alt="winch">
+                    <img src="images/Bomba.jpg" id= 3 alt="pump">
+                    <img src="images/conveyor.png" id= 0 alt="conveyor">
+                </div>
+            </section>
+            <section class="inputs">
+                <h3 data-section="input" data-value="inputs-title" class="inputs__title">Parametros de entrada</h3>
+
+                <div class="inputs__table" lang="ES" id="table" name="conveyor">
+                    <div class="inputs__div">
+                        <h3 class="inputs__h3">Carga<br>(kg)</h3>
+                        <input type="number" class="inputs__input" id="0">
+                    </div>
+                    <div class="inputs__div">
+                        <h3 class="inputs__h3">Peso<br>(kg)</h3>
+                        <input type="number" class="inputs__input" id="1">
+                    </div>               
+                    <div class="inputs__div">
+                        <h3 class="inputs__h3">Velocidad<br>(m/s)</h3>
+                        <input type="number" class="inputs__input" id="2">
+                    </div>           
+                    <div class="inputs__div">
+                        <h3 class="inputs__h3">Coeficiente<br>Fricción(μ)</h3>
+                        <input type="number" class="inputs__input" id="3">
+                    </div>         
+                </div>
+
+                <button data-section="button" data-value="calculate" class="inputs__calculate" id="conveyor">Calcular</button>
+
+                <h3 data-section="input" data-value="outputs-title" class="inputs__title inputs__title--mod">Resultados</h3>
+
+                <div class="inputs__table1" lang="ES" id="table1">
+                    <div class="inputs__div">
+                        <h3 class="inputs__h3">Potencia<br>(hp)</h3>
+                        <output class="inputs__output" id="0">
+                    </div>
+                    <div class="inputs__div">
+                        <h3 class="inputs__h3">Comercial<br>(hp)</h3>
+                        <output class="inputs__output" id="1">
+                    </div>
+                    <div class="inputs__div">
+                        <h3 class="inputs__h3">Potencia<br>(kw)</h3>
+                        <output class="inputs__output" id="1">
+                    </div>
+                    <div class="inputs__div">
+                        <h3 class="inputs__h3">Comercial<br>(kw)</h3>
+                        <output class="inputs__output" id="3">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+    "header":{
+        "main-title": "Selección De Motor"
+    },
+    "system": {
+        "title-sys": "Sistemas",
+        "button-0": "Banda",
+        "button-1": "Banda inclinada",
+        "button-2": "Malacate",
+        "button-3": "Bomba"
+        },
+    "conversor": {
+        "title-conv": "Conversor Unidades",
+        "mass": "Masa",
+        "distance": "Distancia",
+        "speed": "Velocidad"
+    },
+    "button":{
+        "calculate": "Calcular"
+    },
+    "input":{
+        "inputs-title": "Parametros de entrada",
+        "outputs-title": "Resultados"
+    }
+}

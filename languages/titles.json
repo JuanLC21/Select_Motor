@@ -1,0 +1,55 @@
+{
+    "titles1-ES": {
+        "conveyor": {
+            "1": "Carga (kg)",
+            "2": "Peso (kg)",
+            "3": "Velocidad (m/s)",
+            "4": "Coeficiente Fricción(μ)"
+        },
+        "inclined": {
+            "1": "Carga (kg)",
+            "2": "Peso (kg)",
+            "3": "Longitud (m)",
+            "4": "Velocidad (m/s)",
+            "5": "Altura (m)",
+            "6": "Coeficiente Fricción(μ)"
+        },
+        "winch": {
+            "1": "Carga (kg)",
+            "2": "Velocidad (m/s)"
+        }
+    },
+    "titles2-ES": {
+        "1": "Potencia (hp)",
+        "2": "Comercial (hp)",
+        "3": "Potencia (kw)",
+        "4": "Comercial (kw)"
+    },
+    
+    "titles1-EN": {
+        "conveyor": {
+            "1": "Load (lb)",
+            "2": "Weight (lb)",
+            "3": "Speed (ft/s)",
+            "4": "Friction Coefficient(μ)"
+        },
+        "inclined": {
+            "1": "Load (lb)",
+            "2": "Weight (lb)",
+            "3": "Distance (ft)",
+            "4": "Speed (ft/s)",
+            "5": "Height (ft)",
+            "6": "Friction Coefficient(μ)"
+        },
+        "winch": {
+            "1": "Load (lbf)",
+            "2": "Speed (ft/s)"
+        }
+    },
+    "titles2-EN": {
+        "1": "Power (hp)",
+        "2": "Comercial (hp)",
+        "3": "Power (kw)",
+        "4": "Comercial (kw)"
+    }
+}

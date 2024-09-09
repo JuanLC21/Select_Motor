@@ -1,0 +1,25 @@
+{
+    "header":{
+        "main-title": "Motor Selection"
+    },
+    "system": {
+        "title-sys": "Systems",
+        "button-0": "Conveyor belt",
+        "button-1": "Conv inclined",
+        "button-2": "Winch",
+        "button-3": "Pump"
+        },
+    "conversor": {
+        "title-conv": "Units Converter",
+        "mass": "Mass",
+        "distance": "Distance",
+        "speed": "Speed"
+    },
+    "button":{
+        "calculate": "Compute"
+    },
+    "input":{
+        "inputs-title": "Input parameters",
+        "outputs-title": "Results"
+    }
+}
